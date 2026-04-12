@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Scalable Web App</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 50px 60px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      max-width: 600px;
+    }
+    .emoji { font-size: 64px; margin-bottom: 20px; }
+    h1 { font-size: 2rem; margin-bottom: 12px; color: #a78bfa; }
+    p  { font-size: 1.1rem; color: #cbd5e1; line-height: 1.7; }
+    .badge {
+      display: inline-block;
+      margin-top: 24px;
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+      padding: 8px 22px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    .info { margin-top: 30px; font-size: 0.85rem; color: #94a3b8; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">🚀</div>
+    <h1>My First Scalable Web App</h1>
+    <p>Deployed with <strong>Docker</strong> + <strong>Kubernetes</strong><br/>
+       Running on <strong>nginx:alpine</strong> inside a KIND cluster</p>
+    <div class="badge">⚙️ #evn-dop-shipyard26-ship</div>
+    <div class="info">
+      <p>✅ Containerized &nbsp;|&nbsp; ☸️ Orchestrated &nbsp;|&nbsp; 🔁 3 Replicas &nbsp;|&nbsp; 💪 Self-Healing</p>
+    </div>
+  </div>
+</body>
+</html>
